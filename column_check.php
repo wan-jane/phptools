@@ -16,7 +16,7 @@ foreach($tables as $table) {
     if ($result == false) {
         echo $table . " 没有指定字段\n";
         $dt[] = $table;
-        $dt_sql[] = sprintf("ALTER TABLE `%s` ADD COLUMN `%s` BIGINT(20) NULL DEFAULT NULL COMMENT '软删除时间';", $table, $column);
+        $dt_sql[] = sprintf("ALTER TABLE `%s` ADD COLUMN `%s` BIGINT(20) NULL DEFAULT NULL COMMENT '1231';", $table, $column);
     }
 }
 print_r($dt);
